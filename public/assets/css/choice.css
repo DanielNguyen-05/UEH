@@ -1,14 +1,18 @@
 /* FONT VÀ CƠ BẢN */
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Playfair Display', serif;
   height: 100%;
-  background-image: url('/assets/img/background.png'); /* Thay bằng ảnh của bạn */
+  background-image: url('/assets/img/background.png');
+  /* Thay bằng ảnh của bạn */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: #f2f2f2; /* fallback khi chưa tải ảnh */
+  background-color: rgb(240, 216, 195);
+  /* fallback nếu ảnh không tải */
+  /* fallback khi chưa tải ảnh */
 }
 
 /* CONTAINER CHÍNH */
@@ -20,14 +24,18 @@ body, html {
   text-align: center;
   padding: 60px 20px;
   min-height: 100vh;
-  backdrop-filter: brightness(1); /* có thể dùng blur nếu muốn: blur(2px) */
+  backdrop-filter: brightness(1);
+  /* có thể dùng blur nếu muốn: blur(2px) */
 }
 
 /* TIÊU ĐỀ */
 .main-title {
-  font-size: 3rem;
-  color: #333;
+  font-size: 4rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(252, 242, 109, 0.7);
+  color: rgb(84, 32, 32);
   margin-bottom: 2rem;
+  padding-bottom: 2rem;
 }
 
 /* NHÓM HÌNH ẢNH */
@@ -47,9 +55,9 @@ body, html {
 
 /* KHUNG ẢNH */
 .visualizer-img {
-  background-color: white;
+  background-color: rgba(240, 216, 195, 0.6);
   border-radius: 1rem;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
@@ -59,13 +67,13 @@ body, html {
 
 .visualizer-img:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 /* ẢNH BÊN TRONG */
 .img-container {
   width: 100%;
-  height: 180px;
+  height: 360px;
   overflow: hidden;
   border-radius: 0.75rem;
 }
@@ -81,5 +89,11 @@ body, html {
   margin-top: 1rem;
   text-align: center;
   font-size: 1.1rem;
-  color: #444;
+  color: rgb(84, 32, 32);
+  opacity: 1;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
