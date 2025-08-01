@@ -1,0 +1,69 @@
+/* Basic setup for the full-page background */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden; /* Prevents scrollbars */
+}
+
+body {
+    /* Sets the background image */
+    background-image: url('/assets/img/endGame.png');
+    
+    /* Ensures the background image covers the whole screen */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    
+    /* Uses Flexbox to center the button container vertically and horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Sets the default font for the page */
+    font-family: 'Cinzel', serif;
+}
+
+/* Container for the buttons */
+.menu-container {
+    display: flex;
+    /* Adds space between the two buttons */
+    gap: 250px;
+}
+
+/* Common styles for both buttons */
+.btn {
+    padding: 35px 100px;
+    font-size: 1.8rem;
+    color: #f5e9d3; /* Soft off-white text color */
+    border: 2px solid;
+    border-radius: 50px; /* Creates the rounded, pill-like shape */
+    cursor: pointer;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Specific styling for the "Re-experience" button */
+#re-experience-btn {
+    background-color: rgba(90, 74, 67, 0.7); /* Semi-transparent brown */
+    border-color: rgba(80, 68, 64, 0.8);
+}
+
+#re-experience-btn:hover {
+    background-color: rgba(43, 38, 37, 0.9); /* Lightens on hover */
+    border-color: rgba(35, 32, 30, 0.9);
+}
+
+/* Specific styling for the "Log out" button */
+#logout-btn {
+    background-color: #e8c77b; /* Golden color */
+    border-color: #c9a35e;
+    box-shadow: 0 0 15px rgba(232, 199, 123, 0.5); /* Creates the glow effect */
+}
+
+#logout-btn:hover {
+    background-color: #f0d592; /* Brightens on hover */
+    border-color: #dcb671;
+    box-shadow: 0 0 25px rgba(240, 213, 146, 0.8); /* Increases glow on hover */
+}

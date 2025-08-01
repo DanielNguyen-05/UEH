@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop UI</title>
+    <link rel="stylesheet" href="/assets/css/cart.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Radley&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="store-container">
+        <div class="budget-bar">
+            <span class="budget-label">BUDGET WISELY</span>
+            <div class="resources">
+                <div class="resource">
+                    <img src="/assets/img/energy.png" alt="Energy" />
+                    <span>21</span>
+                </div>
+                <div class="resource">
+                    <img src="/assets/img/diamond.png" alt="Diamond" />
+                    <span>4475</span>
+                </div>
+                <div class="resource">
+                    <img src="/assets/img/crys.png" alt="Crystals" />
+                    <span>62</span>
+                </div>
+            </div>
+        </div>
+
+        <aside class="sidebar">
+            <a href="/menu" title="Menu">
+                <div class="sidebar-btn">
+                    <img src="/assets/img/out.png" alt="Back" />
+                </div>
+            </a>
+            <nav>
+                <h2>Shop</h2>
+                <ul>
+                    <li>Store</li>
+                    <li>Pear-Pal Selected</li>
+                    <li>Featured</li>
+                    <li>Resonance</li>
+                    <li>Diamond</li>
+                    <li>Stellarite</li>
+                    <li class="active">Treasure</li>
+                    <li>Clothing</li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <div class="shop-box">
+                <div id="monthlyWrapper">
+                    <img src="/assets/img/month.png" alt="Monthly Gifts" class="card" id="monthly" />
+                </div>
+                <div id="weeklyWrapper">
+                    <img src="/assets/img/week.png" alt="Weekly Gains" class="card" id="weekly" />
+                </div>
+            </div>
+        </main>
+
+        <div class="blur-overlay" id="blurOverlay"></div>
+    </div>
+
+    <script>
+        const overlay = document.getElementById("blurOverlay");
+        const monthly = document.getElementById("monthly");
+        const weekly = document.getElementById("weekly");
+        const monthlyWrapper = document.getElementById("monthlyWrapper");
+        const weeklyWrapper = document.getElementById("weeklyWrapper");
+
+        function focusCard(card) {
+            card.classList.add("card-focus");
+            overlay.style.display = "block";
+            overlay.appendChild(card);
+        }
+
+        function resetCard(card, wrapper) {
+            card.classList.remove("card-focus");
+            wrapper.appendChild(card);
+        }
+
+        monthly.addEventListener("click", () => {
+            focusCard(monthly);
+        });
+
+        weekly.addEventListener("click", () => {
+            focusCard(weekly);
+        });
+
+        overlay.addEventListener("click", () => {
+            if (overlay.contains(monthly)) {
+                resetCard(monthly, monthlyWrapper);
+            }
+            if (overlay.contains(weekly)) {
+                resetCard(weekly, weeklyWrapper);
+            }
+            overlay.style.display = "none";
+        });
+    </script>
+</body>
+
+
+</html>

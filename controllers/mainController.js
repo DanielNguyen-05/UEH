@@ -56,7 +56,7 @@ exports.getCapitalPage = (req, res, next) => {
     res.render("pages/capital", {
         layout: false,
     });
-}; 
+};
 
 exports.getWordGamePage = (req, res, next) => {
     res.render("pages/wordGame", {
@@ -90,6 +90,18 @@ exports.getGiftStatue = (req, res, next) => {
 
 exports.getMarket = (req, res, next) => {
     res.render("pages/market", {
+        layout: false,
+    });
+};
+
+exports.getProfilePage = (req, res, next) => {
+    res.render("pages/profile", {
+        layout: false,
+    });
+};
+
+exports.getEndGamePage = (req, res, next) => {
+    res.render("pages/endGame", {
         layout: false,
     });
 };

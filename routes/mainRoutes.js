@@ -18,6 +18,8 @@ router.get('/game/toy-figurine', mainController.getToyFigurineGamePage);
 router.get('/game/gift-word', mainController.getGiftWord);
 router.get('/game/gift-statue', mainController.getGiftStatue);
 router.get('/market', mainController.getMarket);
+router.get('/profile', mainController.getProfilePage);
+router.get('/end-game', mainController.getEndGamePage);
 
 
 module.exports = router;

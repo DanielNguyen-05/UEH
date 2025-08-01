@@ -9,6 +9,13 @@
 </head>
 
 <body>
+    <!-- Thêm đoạn mã này vào file HTML của bạn -->
+    <div class="guide-video-container">
+        <video autoplay loop muted playsinline>
+            <source src="/assets/video/guide.mp4" type="video/mp4">
+            Trình duyệt của bạn không hỗ trợ thẻ video.
+        </video>
+    </div>
 
     <!-- Sidebar with icons -->
     <div class="sidebar">
@@ -35,14 +42,15 @@
     <!-- Main content overlay -->
     <div class="overlay-box">
         <div class="profile">
-            <img src="/assets/img/2.png" alt="Profile">
+            <a href="/profile" title="Profile">
+                <img src="/assets/img/2.png" alt="Profile">
+            </a>
             <div class="username">lovienal</div>
         </div>
         <div class="UID">UID: 12312314214</div>
-        <!-- <div class="step-info">
-            <b>Step</b><br>
-            <a href="#">Click here to view the map</a>
-        </div> -->
+        <div class="map">
+            <img src="/assets/img/mini-map.png" alt="Map">
+        </div>
     </div>
 
     <!-- Direction guide -->
@@ -93,4 +101,5 @@
         </div>
     </div>
 </body>
+
 </html>

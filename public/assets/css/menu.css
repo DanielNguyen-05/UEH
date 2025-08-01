@@ -170,3 +170,38 @@ body {
     font-weight: bold;
     color: #ccc;
 }
+
+.map {
+    /* position: relative; */
+    width: 300px;
+    height: auto;
+    /* background-size: cover; */
+    border-radius: 10px;
+}
+
+.map img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Dán đoạn mã này vào file CSS của bạn */
+
+.guide-video-container {
+    position: fixed; /* Giữ video ở một vị trí cố định ngay cả khi cuộn trang */
+    top: 20px;       /* Khoảng cách 20px từ cạnh trên của màn hình */
+    right: 20px;     /* Khoảng cách 20px từ cạnh phải của màn hình */
+    width: 600px;    /* Chiều rộng của video, bạn có thể thay đổi */
+    height: auto;    /* Chiều cao sẽ tự động điều chỉnh để giữ đúng tỷ lệ */
+    z-index: 1000;   /* Đảm bảo video luôn nằm trên các phần tử khác */
+    border: 2px solid #fff; /* Thêm một đường viền trắng (tùy chọn) */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Thêm hiệu ứng đổ bóng (tùy chọn) */
+    border-radius: 8px; /* Bo tròn các góc (tùy chọn) */
+    overflow: hidden; /* Đảm bảo video không tràn ra ngoài viền bo tròn */
+}
+
+.guide-video-container video {
+    width: 100%;  /* Đảm bảo video lấp đầy vùng chứa của nó */
+    height: 100%;
+    display: block; /* Loại bỏ khoảng trắng thừa bên dưới video */
+}

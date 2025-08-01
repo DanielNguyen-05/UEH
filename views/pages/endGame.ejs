@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>End Game</title>
+    
+    <!-- Giữ nguyên đường dẫn đến file CSS của bạn -->
+    <link rel="stylesheet" href="/assets/css/endGame.css">
+    
+    <!-- Giữ nguyên các link font chữ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="menu-container">
+        <!-- 
+            href="/menu" khớp với đích đến trong file JS.
+            Không cần target="_blank".
+        -->
+        <a href="/menu" class="btn" id="re-experience-btn">Re-experience</a>
+        
+        <!-- 
+            href="/" khớp với đích đến trong file JS.
+            Mã HTML cũ của bạn là "/account", nhưng JS của bạn chuyển đến "/".
+            Việc đồng bộ chúng là rất quan trọng.
+        -->
+        <a href="/" class="btn" id="logout-btn">Log out</a>
+    </div>
+
+    <!-- 
+      **PHẦN QUAN TRỌNG NHẤT:**
+      Bạn phải thêm thẻ <script> này để liên kết và thực thi file JavaScript của mình.
+      Hãy đặt nó ngay trước thẻ đóng </body>.
+      Thay "path/to/your/script.js" bằng đường dẫn thực tế.
+    -->
+    <script src="/assets/js/endGame.js"></script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="/assets/css/profile.css" />
+</head>
+
+<body>
+    <div class="sidebar">
+        <a href="/account" title="Logout">
+            <div class="sidebar-btn"><img src="/assets/img/out.png" alt="Out" /></div>
+        </a>
+        <a href="#" title="Camera">
+            <div class="sidebar-btn"><img src="/assets/img/cam.png" alt="Cam" /></div>
+        </a>
+        <a href="/cart" title="Cart">
+            <div class="sidebar-btn"><img src="/assets/img/cart.png" alt="Cart" /></div>
+        </a>
+        <a href="/mail" title="Mail">
+            <div class="sidebar-btn"><img src="/assets/img/mail.png" alt="Mail" /></div>
+        </a>
+        <a href="/choice" title="Explore">
+            <div class="sidebar-btn"><img src="/assets/img/compass.png" alt="Compass" /></div>
+        </a>
+        <a href="/setting" title="Settings">
+            <div class="sidebar-btn"><img src="/assets/img/setting.png" alt="Settings" /></div>
+        </a>
+    </div>
+
+    <div class="profile-content">
+        <!-- Profile Info Box -->
+        <div class="profile-info">
+            <div class="top-info">
+                <div class="avatar-section">
+                    <img class="avatar" src="/assets/img/avatar.png" alt="Avatar" />
+                    <div class="username">lovienal</div>
+                    <div class="uid">UID: 87432578</div>
+                    <div class="adventure-rank">Adventure Rank: <strong>8</strong></div>
+                    <div class="adventure-bar">
+                        <div class="progress" style="width: 80%;"></div>
+                    </div>
+                    <div class="vietnam-level">Vietnam Level: <strong>2</strong></div>
+                </div>
+                <img class="edit-icon" src="/assets/img/edit.png" alt="Edit" />
+            </div>
+
+            <!-- Friend List -->
+            <div class="friend-list">
+                <img src="/assets/img/friend1.png" alt="Friend" />
+                <img src="/assets/img/friend2.png" alt="Friend" />
+                <img src="/assets/img/friend3.png" alt="Friend" />
+                <img src="/assets/img/friend4.png" alt="Friend" />
+                <img src="/assets/img/friend5.png" alt="Friend" />
+            </div>
+
+            <!-- Feature Grid -->
+            <div class="feature-grid">
+                <div class="feature-btn"><img src="/assets/img/shop.png" alt="Shop" /><span>Shop</span></div>
+                <div class="feature-btn"><img src="/assets/img/friends.png" alt="Friends" /><span>Friends</span></div>
+                <div class="feature-btn"><img src="/assets/img/clothes.png" alt="Clothes" /><span>Clothes</span></div>
+                <div class="feature-btn"><img src="/assets/img/achievement.png"
+                        alt="Achievement" /><span>Achievement</span></div>
+                <div class="feature-btn"><img src="/assets/img/archive.png" alt="Archive" /><span>Archive</span></div>
+                <div class="feature-btn"><img src="/assets/img/map.png" alt="Map" /><span>Map</span></div>
+                <div class="feature-btn"><img src="/assets/img/character.png" alt="Character" /><span>Character</span>
+                </div>
+                <div class="feature-btn"><img src="/assets/img/inventory.png" alt="Inventory" /><span>Inventory</span>
+                </div>
+                <div class="feature-btn"><img src="/assets/img/question.png" alt="Question" /><span>Question</span>
+                </div>
+                <div class="feature-btn"><img src="/assets/img/adventure-handbook.png"
+                        alt="Adventurer Handbook" /><span>Adventurer Handbook</span></div>
+                <div class="feature-btn"><img src="/assets/img/community.png" alt="Community" /><span>Community</span>
+                </div>
+                <div class="feature-btn"><img src="/assets/img/share.png" alt="Share" /><span>Share</span></div>
+                <div class="feature-btn"><img src="/assets/img/events.png" alt="Events" /><span>Events</span></div>
+                <div class="feature-btn"><img src="/assets/img/wish.png" alt="Wish" /><span>Wish</span></div>
+                <div class="feature-btn"><img src="/assets/img/update.png" alt="Update" /><span>Update</span></div>
+                <div class="feature-btn"><img src="/assets/img/feedback.png" alt="Feedback" /><span>Feedback</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Character Display -->
+        <div class="character-display">
+            <div class="level-label">Level 1</div>
+            <img id="character-image" src="/assets/img/character-lv1.png" alt="Character" />
+            <button class="level-toggle" onclick="toggleLevel()"><img src="/assets/img/arrow-right.png"
+                    alt="Toggle" /></button>
+        </div>
+    </div>
+
+    <script>
+        let level = 1;
+        function toggleLevel() {
+            const img = document.getElementById('character-image');
+            const label = document.querySelector('.level-label');
+            if (level === 1) {
+                img.src = "/assets/img/character-lv100.png";
+                label.textContent = "Level 100";
+                level = 100;
+            } else {
+                img.src = "/assets/img/character-lv1.png";
+                label.textContent = "Level 1";
+                level = 1;
+            }
+        }
+    </script>
+</body>
+
+</html>

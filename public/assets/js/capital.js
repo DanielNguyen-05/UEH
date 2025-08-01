@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (charIndex < fullText.length) {
             dialogueTextElement.innerHTML += fullText.charAt(charIndex);
             charIndex++;
-            setTimeout(typeWriter, 20); // Tốc độ gõ chữ (20ms mỗi ký tự)
+            setTimeout(typeWriter, 20); // Tốc độ gõ chữ (40ms mỗi ký tự)
         } else {
             // Khi đã gõ xong chữ
             dialogueTextElement.classList.add('completed'); // Ẩn con trỏ
