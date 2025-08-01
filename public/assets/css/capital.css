@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&family=Roboto&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.scene-container {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/assets/img/startWordGame.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    cursor: pointer; /* Biến con trỏ thành hình bàn tay */
+}
+
+.dialogue-box {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 150px; /* Điều chỉnh chiều cao nếu cần */
+    background: rgba(0, 0, 0, 0.75);
+    border-top: 2px solid rgba(255, 255, 255, 0.2);
+    padding: 20px 40px;
+    box-sizing: border-box;
+    
+    /* Trạng thái ban đầu cho animation */
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+/* Trạng thái khi hiển thị */
+.dialogue-box.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#dialogue-text {
+    color: #f0f0f0;
+    font-family: 'VT323', monospace; /* Font chữ giống máy đánh chữ */
+    font-size: 1.8rem; /* Kích thước chữ */
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* Hiệu ứng con trỏ nhấp nháy */
+#dialogue-text::after {
+    content: '▋';
+    display: inline-block;
+    animation: blink 0.7s infinite;
+    margin-left: 5px;
+}
+
+#dialogue-text.completed::after {
+    /* Ẩn con trỏ khi đã gõ xong chữ */
+    display: none;
+}
+
+/* Animation cho con trỏ */
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}

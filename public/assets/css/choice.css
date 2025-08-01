@@ -1,0 +1,85 @@
+/* FONT VÀ CƠ BẢN */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  height: 100%;
+  background-image: url('/assets/img/background.png'); /* Thay bằng ảnh của bạn */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #f2f2f2; /* fallback khi chưa tải ảnh */
+}
+
+/* CONTAINER CHÍNH */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 20px;
+  min-height: 100vh;
+  backdrop-filter: brightness(1); /* có thể dùng blur nếu muốn: blur(2px) */
+}
+
+/* TIÊU ĐỀ */
+.main-title {
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+/* NHÓM HÌNH ẢNH */
+.group-visualizer-img {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 900px;
+}
+
+/* LINK BAO NGOÀI */
+.visualizer-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* KHUNG ẢNH */
+.visualizer-img {
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.visualizer-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* ẢNH BÊN TRONG */
+.img-container {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 0.75rem;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* PHẦN THÔNG TIN BÊN DƯỚI ẢNH */
+.img-info {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #444;
+}

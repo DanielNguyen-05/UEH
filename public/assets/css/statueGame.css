@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.game-container {
+    width: 100vw;
+    height: 100vh;
+    /* Sử dụng ảnh nền đầy đủ của bạn ở đây */
+    background-image: url('/assets/img/statueGame.png');
+    background-size: cover;
+    background-position: center;
+    position: relative; /* Quan trọng để định vị các phần tử con */
+}
+
+.dialogue-box {
+    position: absolute; /* Đặt lên trên container chính */
+    bottom: 2%; /* Điều chỉnh khoảng cách từ đáy */
+    left: 2%;
+    right: 2%;
+    height: 120px; /* Chiều cao của hộp thoại */
+    padding: 20px 30px;
+    box-sizing: border-box;
+    
+    /* Hiệu ứng nền đen mờ có vân nhiễu */
+    background-color: rgba(0, 0, 0, 0.75);
+    
+    /* Trạng thái ban đầu để làm animation */
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+/* Trạng thái khi hiển thị */
+.dialogue-box.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#dialogue-text {
+    color: #e0e0e0;
+    font-family: 'Roboto Mono', monospace; /* Font chữ đơn cách cho cảm giác máy đánh chữ */
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Hiệu ứng con trỏ nhấp nháy */
+#dialogue-text::after {
+    content: '_';
+    display: inline-block;
+    animation: blink 0.8s infinite;
+    position: relative;
+    top: -2px;
+    margin-left: 4px;
+}
+
+#dialogue-text.completed::after {
+    display: none; /* Ẩn con trỏ khi gõ xong */
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}

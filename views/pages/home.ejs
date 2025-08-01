@@ -1,30 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Playful Season</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Flow in Viet Nam</title>
+    <!-- Đường dẫn đến tệp CSS của bạn -->
     <link rel="stylesheet" href="/assets/css/home-page.css">
-    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <div class="container">
-        <div class="overlay">
-            <div class="main-text">
-                <h1 class="title">Playful Season</h1>
-                <p class="subtitle">A flick of the wand, dreams soar beyond!</p>
-            </div>
-
-            <div class="thumbnails">
-                <img src="img/portrait1.png" alt="Character 1">
-                <img src="img/portrait2.png" alt="Character 2">
-            </div>
-            <p class="gift-text">THE QUINTESSENTIAL GIFT</p>
-
-            <button class="start-button">START GAME</button>
-        </div>
+    <div id="video-container">
+        <video autoplay muted loop id="myVideo">
+            <!-- Đường dẫn đến tệp video của bạn -->
+            <source src="/assets/video/1.mp4" type="video/mp4">
+            Trình duyệt của bạn không hỗ trợ thẻ video.
+        </video>
     </div>
-</body>
 
+    <!-- Đường dẫn đến tệp JS của bạn -->
+    <script src="/assets/js/home-page.js"></script>
+</body>
 </html>

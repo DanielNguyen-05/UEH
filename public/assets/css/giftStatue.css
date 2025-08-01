@@ -1,0 +1,55 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.page-container {
+    width: 100vw;
+    height: 100vh;
+    /* Sử dụng ảnh nền đầy đủ của bạn */
+    background-image: url('/assets/img/giftStatue.png');
+    background-size: cover;
+    background-position: center;
+    /* Hệ quy chiếu cho các nút bấm */
+    position: relative;
+}
+
+/* Nút Return bằng hình ảnh */
+.return-button {
+    position: absolute;
+    top: 5.5%; /* Tinh chỉnh */
+    left: 2.5%;  /* Tinh chỉnh */
+    cursor: pointer;
+    /* border: 2px solid red; */ /* Dùng để debug vị trí */
+}
+.return-button img {
+    width: 160px; /* Điều chỉnh kích thước ảnh nút của bạn */
+    display: block; /* Loại bỏ khoảng trống thừa dưới ảnh */
+}
+
+/* Kiểu chung cho các nút bấm VÔ HÌNH */
+.overlay-button {
+    position: absolute;
+    background: transparent;
+    cursor: pointer;
+    /* border: 2px dashed yellow; */ /* Dùng để debug vị trí */
+}
+
+/* Định vị nút Collect All */
+.collect-button {
+    bottom: 9%;
+    left: 36%;
+    width: 14%;
+    height: 7%;
+}
+
+/* Định vị nút Next */
+.next-button {
+    bottom: 9%;
+    right: 36%;
+    width: 14%;
+    height: 7%;
+}

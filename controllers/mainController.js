@@ -4,25 +4,92 @@ exports.getHomePage = (req, res, next) => {
     });
 };
 
-// exports.getAboutPage = (req, res, next) => {
-//     res.render("pages/about", {
-//         pageTitle: 'About us',
-//         pageCSS: '/assets/css/about-page.css',
-//         pageJS: '/assets/js/bar.js',
-//     });
-// };
+exports.getLoadingPage = (req, res, next) => {
+    res.render("pages/loading", {
+        layout: false,
+    });
+};
 
-// exports.getAlgorithmPage = (req, res, next) => {
-//     res.render("pages/algorithm", {
-//         pageTitle: 'Algorithms',
-//         pageCSS: '/assets/css/algorithm-page.css',
-//         pageJS: '/assets/js/bar.js',
-//     });
-// };
+exports.getAccountPage = (req, res, next) => {
+    res.render("pages/account", {
+        layout: false,
+    });
+};
 
-// exports.getGuidePage = (req, res, next) => {
-//     res.render("pages/guide", {
-//         pageTitle: 'Guide Page',
-//         pageCSS: '/assets/css/guide.css',
-//     });
-// };
+exports.getChoicePage = (req, res, next) => {
+    res.render("pages/choice", {
+        layout: false,
+    });
+};
+
+exports.getMenuPage = (req, res, next) => {
+    res.render("pages/menu", {
+        layout: false,
+    });
+};
+
+exports.getSettingPage = (req, res, next) => {
+    res.render("pages/setting", {
+        layout: false,
+    });
+};
+
+exports.getMailPage = (req, res, next) => {
+    res.render("pages/mail", {
+        layout: false,
+    });
+};
+
+exports.getCartPage = (req, res, next) => {
+    res.render("pages/cart", {
+        layout: false,
+    });
+};
+
+exports.getChoicePage = (req, res, next) => {
+    res.render("pages/choice", {
+        layout: false,
+    });
+};
+
+exports.getCapitalPage = (req, res, next) => {
+    res.render("pages/capital", {
+        layout: false,
+    });
+}; 
+
+exports.getWordGamePage = (req, res, next) => {
+    res.render("pages/wordGame", {
+        layout: false,
+    });
+};
+
+exports.getToyFigurineGamePage = (req, res, next) => {
+    res.render("pages/toyFigurineGame", {
+        layout: false,
+    });
+};
+
+exports.getStatueGamePage = (req, res, next) => {
+    res.render("pages/frontStatueGame", {
+        layout: false,
+    });
+};
+
+exports.getGiftWord = (req, res, next) => {
+    res.render("pages/giftWord", {
+        layout: false,
+    });
+};
+
+exports.getGiftStatue = (req, res, next) => {
+    res.render("pages/giftStatue", {
+        layout: false,
+    });
+};
+
+exports.getMarket = (req, res, next) => {
+    res.render("pages/market", {
+        layout: false,
+    });
+};
