@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (charIndex < fullText.length) {
             dialogueTextElement.innerHTML += fullText.charAt(charIndex);
             charIndex++;
-            setTimeout(typeWriter, 30);
+            setTimeout(typeWriter, 20);
         } else {
             // Khi đã gõ xong chữ, ẩn con trỏ đi
             dialogueTextElement.classList.add('completed');

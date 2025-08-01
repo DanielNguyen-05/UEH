@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (charIndex < fullText.length) {
             dialogueTextElement.innerHTML += fullText.charAt(charIndex);
             charIndex++;
-            setTimeout(typeWriter, 30);
+            setTimeout(typeWriter, 20);
         } else {
             dialogueTextElement.classList.add('completed');
             isFinished = true;

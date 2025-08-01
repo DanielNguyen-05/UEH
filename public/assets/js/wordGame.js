@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         // 3. Sau khi toàn bộ text hiện xong
-        const totalDelay = textElements.length * 150;
+        const totalDelay = textElements.length * 75;
         setTimeout(() => {
             isFinished = true;
         }, totalDelay + 300); // +300ms buffer
