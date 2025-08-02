@@ -39,7 +39,7 @@ body {
 }
 
 /* Inputs */
-.login-box input[type="email"],
+.login-box input[type="text"],
 .login-box input[type="password"] {
     width: 80%;
     padding: 16px 16px;
