@@ -105,3 +105,9 @@ exports.getEndGamePage = (req, res, next) => {
         layout: false,
     });
 };
+
+exports.getSignUpPage = (req, res, next) => {
+    res.render("pages/signUp", {
+        layout: false,
+    });
+};

@@ -20,6 +20,6 @@ router.get('/game/gift-statue', mainController.getGiftStatue);
 router.get('/market', mainController.getMarket);
 router.get('/profile', mainController.getProfilePage);
 router.get('/end-game', mainController.getEndGamePage);
-
+router.get('/sign-up', mainController.getSignUpPage);
 
 module.exports = router;
