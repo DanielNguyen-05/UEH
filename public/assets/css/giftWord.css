@@ -25,7 +25,7 @@ body {
     
     /* -- SỬA LỖI VỊ TRÍ -- */
     /* Sử dụng % để các nút di chuyển cùng ảnh nền */
-    bottom: -43%; /* Khoảng cách từ cạnh dưới của container */
+    bottom: -28%; /* Khoảng cách từ cạnh dưới của container */
     width: 20%;   /* Chiều rộng của nút bằng 15% chiều rộng container */
     height: 8%;   /* Chiều cao của nút bằng 8% chiều cao container */
     
@@ -52,14 +52,14 @@ body {
 
 /* Vị trí cụ thể cho từng nút (tính từ cạnh trái) */
 #collect-all-btn {
-    left: 55%;
+    left: 50%;
     /* Thêm màu nền cho khớp với thiết kế */
     background-color: #755f58; 
     border-radius: 30px;
 }
 
 #next-btn {
-    left: 97%;
+    left: 90%;
     /* Thêm màu nền cho khớp với thiết kế */
     background-color: #5c5c5c;
     border-radius: 30px;
