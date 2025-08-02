@@ -1,19 +1,28 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Get Gift Word Game</title>
+    <title>Badge Collection</title>
     <link rel="stylesheet" href="/assets/css/giftWord.css">
+    
+    <!-- Tùy chọn: Thêm font chữ giống trong game -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="page-container">
-        <!-- Nút Collect All (vô hình) -->
-        <a id="collect-button" href="#" class="overlay-button collect-button" aria-label="Thu thập tất cả"></a>
+    <!-- Vùng chứa chính cho toàn bộ giao diện huy hiệu -->
+    <div class="badge-container">
+        
+        <!-- Nút "Collect All" -->
+        <button class="btn" id="collect-all-btn">Collect All</button>
 
-        <!-- Nút Next (vô hình) -->
-        <a id="next-button" href="#" class="overlay-button next-button" aria-label="Tiếp theo"></a>
+        <!-- Nút "Next" -->
+        <!-- Đây là một thẻ <a> được tạo kiểu giống nút bấm. -->
+        <!-- href="/game/statue" sẽ điều hướng người dùng đến trang yêu cầu. -->
+        <a href="/game/statue" class="btn" id="next-btn">Next</a>
+
     </div>
-    <script src="/assets/js/giftWord.js"></script>
 </body>
 </html>

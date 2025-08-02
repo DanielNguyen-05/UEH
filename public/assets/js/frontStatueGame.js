@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const dialogueTextElement = document.getElementById('dialogue-text');
     const container = document.getElementById('container');
 
-    const fullText = "Xuan La to he craft village in Phu Xuyen district, Hanoi is the only place that preserves the traditional art of making to he from sticky rice flour with vivid and colorful shapes. With hundreds of artisans practicing the profession, this place not only preserves the value of folk culture but also spreads the joy of creativity to the younger generation.";
+    const fullText = "Xuan La to he craft village in Phu Xuyen district, Hanoi is the only place that preserves the traditional art of making to he from sticky rice flour with vivid and colorful shapes. With hundreds of artisans practicing the profession, this place not only preserves the value of folk culture but also spreads the joy of creativity to the younger generation. Press Enter to continue!!!";
 
     let charIndex = 0;
     let isFinished = false;

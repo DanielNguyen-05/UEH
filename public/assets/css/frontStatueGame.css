@@ -30,7 +30,7 @@ body, html {
     bottom: 2%; /* Điều chỉnh khoảng cách từ đáy */
     left: 2%;
     right: 2%;
-    height: 120px; /* Chiều cao của hộp thoại */
+    height: 200px; /* Chiều cao của hộp thoại */
     padding: 20px 30px;
     box-sizing: border-box;
     
@@ -52,7 +52,7 @@ body, html {
 #dialogue-text {
     color: #e0e0e0;
     font-family: 'Roboto Mono', monospace; /* Font chữ đơn cách cho cảm giác máy đánh chữ */
-    font-size: 1rem;
+    font-size: 1.8rem;
     line-height: 1.5;
     margin: 0;
 }

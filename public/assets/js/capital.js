@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const dialogueBox = document.getElementById('dialogue-box');
     const dialogueTextElement = document.getElementById('dialogue-text');
 
-    const fullText = "Welcome to the year 1514 in Thang Long, Hanoi. In front of you stands the Turtle Stele at the Temple of Literature - Quoc Tu Giam. In this round, you are a young scholar entrusted with the mission to restore an ancient stele in Thang Long - a place that preserves millennia of historical values.";
+    const fullText = "Welcome to the year 1514 in Thang Long, Hanoi. In front of you stands the Turtle Stele at the Temple of Literature - Quoc Tu Giam. In this round, you are a young scholar entrusted with the mission to restore an ancient stele in Thang Long - a place that preserves millennia of historical values. Press Enter to continue!!!";
 
     let charIndex = 0;
     let canContinue = false;

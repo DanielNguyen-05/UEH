@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const dialogueBox = document.getElementById('dialogue-box');
     const dialogueTextElement = document.getElementById('dialogue-text');
 
-    const fullText = "In this round, you will take on the role of a To He artisan - a part of Vietnam's traditional folk culture. Your task is to use tools like molding, stretching, and coloring to recreate the given figure within a time limit. The AI will evaluate your work based on accuracy. If your accuracy score is over 80%, you win this round. You can also click the icon to create a group and compete with friends.";
+    const fullText = "In this round, you will take on the role of a To He artisan - a part of Vietnam's traditional folk culture. Your task is to use tools like molding, stretching, and coloring to recreate the given figure within a time limit. The AI will evaluate your work based on accuracy. If your accuracy score is over 80%, you win this round. You can also click the icon to create a group and compete with friends. Press Enter to continue!!!";
     
     let charIndex = 0;
 

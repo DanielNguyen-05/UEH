@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const dialogueBox = document.getElementById('dialogue-box');
     const dialogueTextElement = document.getElementById('dialogue-text');
 
-    const fullText = "At Dong Xuan market, the atmosphere is always bustling from early morning to late afternoon. The stalls are crowded, selling all kinds of items from traditional to modern. In the game world, this place is recreated as a bustling trading center, where players can buy and sell items, rent support pets and equip unique costumes to upgrade their characters. The colorful and diverse scenery makes Dong Xuan market a destination not to be missed on the journey of discovery.";
+    const fullText = "At Dong Xuan market, the atmosphere is always bustling from early morning to late afternoon. The stalls are crowded, selling all kinds of items from traditional to modern. In the game world, this place is recreated as a bustling trading center, where players can buy and sell items, rent support pets and equip unique costumes to upgrade their characters. The colorful and diverse scenery makes Dong Xuan market a destination not to be missed on the journey of discovery. Press Enter to continue!!!";
 
     let charIndex = 0;
     let canContinue = false;
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function proceedToNextScene() {
         if (canContinue) {
-            window.location.href = '/endGame';
+            window.location.href = '/end-game';
         }
     }
 
